@@ -1,0 +1,42 @@
+{
+  "name": "n8n-nodes-kolivri",
+  "version": "1.0.0",
+  "description": "n8n community node for Kolivri Voice AI outbound phone calls and autonomous SMB growth engines",
+  "license": "MIT",
+  "homepage": "https://kolivri.com",
+  "author": {
+    "name": "Kolivri",
+    "url": "https://kolivri.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kolivritech/n8n-nodes-kolivri.git"
+  },
+  "main": "dist/nodes/Kolivri/Kolivri.node.js",
+  "scripts": {
+    "test": "node --test test/n8n-node.test.mjs"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "kolivri",
+    "voice-ai",
+    "phone-call",
+    "ccaas",
+    "hebrew"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/KolivriApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Kolivri/Kolivri.node.js"
+    ]
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
